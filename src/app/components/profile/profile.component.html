@@ -14,10 +14,9 @@
           </div>
           <div class="col-sm-5">
             <ul class="List-group">
-              <li class="List-group-item" ngIf="profile.bio">{{profile.bio}}</li>
-              <li class="List-group-item" ngIf="profile.bio">{{profile.bio}}</li>
-              <li class="List-group-item" ngIf="profile.bio">{{profile.bio}}</li>
-              <li class="List-group-item" ngIf="profile.bio">{{profile.bio}}</li>
+              <li class="List-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+              <li class="List-group-item" *ngIf="profile.blog"><a href="{{profile.blog}}" target="blank">"{{profile.blog}}</a></li>
+              <li class="List-group-item" *ngIf="profile.email">{{profile.email}}</li>
 
             </ul>
 
