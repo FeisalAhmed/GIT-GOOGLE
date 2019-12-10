@@ -37,7 +37,8 @@
                 </div>
                 <div class="panel-body" *ngFor="let repo of repos">
                   <p>
-                    {{repo.name}} 
+                    {{repo.name}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning">View this project on github</a>
+                    {{repo.description}}
 
                   </p>
 
